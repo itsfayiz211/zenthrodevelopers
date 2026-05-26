@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg-dark: #0B0F0C;
+  --color-brand-bg-medium: #101512;
+  --color-brand-bg-light: #141A16;
+  --color-brand-primary: #588157;
+  --color-brand-secondary: #6B9B69;
+  --color-brand-card: #161D19;
+  --color-brand-border: rgba(255, 255, 255, 0.06);
+  --color-brand-text-primary: #F5F7F5;
+  --color-brand-text-secondary: #A8B3AA;
+  
+  --font-display: var(--font-outfit), var(--font-geist-sans), sans-serif;
+  --font-sans: var(--font-inter), var(--font-geist-sans), sans-serif;
+}
+
+:root {
+  --background: #0B0F0C;
+  --foreground: #F5F7F5;
+}
+
+body {
+  background-color: #0B0F0C;
+  color: #F5F7F5;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #161D19;
+  border: 2px solid #0B0F0C;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #588157;
+}
+
+/* Ambient Radial Glows */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Glassmorphism subtle */
+.glass-panel {
+  background: rgba(22, 29, 25, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel-glow {
+  background: rgba(22, 29, 25, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(88, 129, 87, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), 
+              inset 0 0 12px rgba(88, 129, 87, 0.05);
+}
+
+/* Animated Grid Background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Tech Dot Grid Background */
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(88, 129, 87, 0.08) 1px, transparent 1px);
+}
+
+/* Premium noise effect */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.02;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Glowing text */
+.text-glow {
+  text-shadow: 0 0 20px rgba(88, 129, 87, 0.3);
+}
+
+/* Smooth custom selection */
+::selection {
+  background: rgba(88, 129, 87, 0.3);
+  color: #F5F7F5;
+}
+
+/* Keyframes for soft marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee 30s linear infinite reverse;
+}
+
+.animate-marquee:hover, .animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Pulse Glows */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.15; filter: blur(120px); }
+  50% { opacity: 0.25; filter: blur(140px); }
+}
+
+.pulse-glow-green {
+  animation: pulse-glow 8s ease-in-out infinite;
+}

@@ -1,0 +1,71 @@
+import type { Metadata } from "next";
+import { Outfit, Inter } from "next/font/google";
+import "./globals.css";
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  title: "Zenthro Developers — Trusted SEO & Web Development Agency in Kozhikode",
+  description: "Zenthro Developers is a trusted SEO and web development agency in Kozhikode. We design and build premium custom web applications, SaaS platforms, high-converting dashboards, and branding systems for elite startups and enterprise brands.",
+  keywords: [
+    "SEO Agency Kozhikode",
+    "Web Development Agency",
+    "Full-Stack Development",
+    "SaaS Products",
+    "Web Design Agency Kozhikode",
+    "Premium Websites",
+    "Custom Web Applications",
+    "React Native",
+    "Next.js Developer",
+    "Digital Agency Kozhikode",
+    "SEO Services",
+    "High-Performance Dashboards",
+    "Zenthro Developers"
+  ],
+  authors: [{ name: "Zenthro Developers" }],
+  openGraph: {
+    title: "Zenthro Developers — Trusted SEO & Web Development Agency",
+    description: "We build modern digital systems engineered for growth. Premium full-stack websites, SaaS platforms, and dashboards for elite brands in Kozhikode.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Zenthro Developers",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zenthro Developers — Trusted SEO & Web Development Agency",
+    description: "Premium web development and SEO services in Kozhikode for growth-focused brands.",
+  },
+};
+
+export default function RootLayout({
+  children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
+  return (
+    <html
+      lang="en"
+      className={`${outfit.variable} ${inter.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-brand-bg-dark text-brand-text-primary selection:bg-brand-primary/30 selection:text-brand-text-primary overflow-x-hidden">
+        {/* Cinematic noise overlay */}
+        <div className="noise-overlay" />
+        
+        {/* Layout content */}
+        <div className="relative z-10 flex flex-col min-h-screen">
+          {children}
+        </div>
+      </body>
+    </html>
+  );
+}
