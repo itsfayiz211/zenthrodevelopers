@@ -20,6 +20,25 @@
   --foreground: #eef8f5;
 }
 
+html.light {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --color-brand-bg-dark: #e8f6f1;
+  --color-brand-bg-medium: #d8f1e8;
+  --color-brand-bg-light: #f3fbf9;
+  --color-brand-primary: #2d8c77;
+  --color-brand-secondary: #1b7c8c;
+  --color-brand-card: #e3f5ef;
+  --color-brand-border: rgba(45, 140, 119, 0.18);
+  --color-brand-text-primary: #0f172a;
+  --color-brand-text-secondary: #4f6d65;
+}
+
+html,
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
 body {
   background-color: var(--background);
   background-image:
