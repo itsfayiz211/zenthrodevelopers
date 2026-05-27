@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -56,17 +58,28 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${outfit.variable} ${inter.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-brand-bg-dark text-brand-text-primary selection:bg-brand-primary/30 selection:text-brand-text-primary overflow-x-hidden">
+        <Script
+          id="theme-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `;(function(){try{var t=localStorage.getItem('zenthro-theme');if(!t){t='light';}document.documentElement.classList.add(t==='light'?'light':'dark');}catch(e){}})()`,
+          }}
+        />
+
         {/* Cinematic noise overlay */}
         <div className="noise-overlay" />
         
         {/* Layout content */}
-        <div className="relative z-10 flex flex-col min-h-screen">
-          {children}
-          <ServiceWorkerRegister />
-        </div>
+        <ThemeProvider>
+          <div className="relative z-10 flex flex-col min-h-screen">
+            {children}
+            <ServiceWorkerRegister />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

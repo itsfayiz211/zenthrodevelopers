@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { name: "Services", href: "#services" },
@@ -58,6 +59,7 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden items-center gap-4 md:flex">
+            <ThemeToggle />
             <a
               href="/order"
               className="inline-flex items-center gap-2 rounded-full border border-brand-primary/30 bg-brand-primary/10 px-5 py-2.5 text-sm font-semibold text-brand-text-primary transition duration-300 hover:bg-brand-primary/20 hover:border-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/40"
@@ -99,14 +101,17 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <a
-                href="/order"
-                onClick={() => setMobileMenuOpen(false)}
-                className="mt-2 inline-flex items-center justify-center rounded-3xl bg-brand-primary px-6 py-4 text-center text-base font-semibold text-brand-bg-dark transition hover:bg-brand-secondary"
-              >
-                Start Your Project
-                <ArrowUpRight className="ml-2 h-5 w-5" />
-              </a>
+              <div className="flex items-center justify-between gap-3">
+                <ThemeToggle />
+                <a
+                  href="/order"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="inline-flex items-center justify-center rounded-3xl bg-brand-primary px-6 py-4 text-center text-base font-semibold text-brand-bg-dark transition hover:bg-brand-secondary"
+                >
+                  Start Your Project
+                  <ArrowUpRight className="ml-2 h-5 w-5" />
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
