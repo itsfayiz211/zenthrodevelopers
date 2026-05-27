@@ -12,7 +12,7 @@ export default function Footer() {
   const navLinks = [
     { name: "Services", href: "#services" },
     { name: "About", href: "#about" },
-    { name: "Work", href: "#projects" },
+    { name: "Projects", href: "#projects" },
     { name: "Process", href: "#process" },
     { name: "Why Us", href: "#why-choose-v" },
     { name: "Contact", href: "#contact" },

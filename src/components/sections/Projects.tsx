@@ -8,37 +8,37 @@ export default function Projects() {
   const projectsList = [
     {
       title: "Aether Finance",
-      industry: "Fintech & Web3",
-      desc: "A fast investment dashboard built for crypto and finance teams.",
+      industry: "Finance",
+      desc: "A dashboard for finance teams to watch crypto investments in real time.",
       tech: ["Next.js", "WebSockets", "Tailwind CSS", "Recharts"],
-      results: "14ms WebSocket latency, +4.8x client retention",
+      results: "Fast live updates, more engaged users",
       metrics: [
-        { label: "Processing Latency", val: "14ms" },
-        { label: "Asset Turnover", val: "99.9%" },
+        { label: "Latency", val: "14ms" },
+        { label: "Asset uptime", val: "99.9%" },
       ],
       color: "from-emerald-500/10 to-brand-primary/20",
     },
     {
       title: "Kortex SaaS",
-      industry: "Artificial Intelligence",
-      desc: "Fully integrated collaborative task scheduler and GPU workload visualizer built for globally distributed machine learning teams.",
+      industry: "AI tools",
+      desc: "A simple platform for teams to plan work and track AI jobs.",
       tech: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
-      results: "+42% operational speed, 100% cloud scalability",
+      results: "Faster team planning and easier scaling",
       metrics: [
-        { label: "GPU Load Efficiency", val: "94%" },
-        { label: "Weekly active users", val: "45K" },
+        { label: "Team speed", val: "+42%" },
+        { label: "Cloud scale", val: "100%" },
       ],
       color: "from-brand-primary/10 to-brand-secondary/20",
     },
     {
-      title: "Novus E-Commerce",
-      industry: "Luxury Retail & Branding",
-      desc: "A clean e-commerce site made for a luxury watch brand.",
+      title: "Novus Store",
+      industry: "Online shop",
+      desc: "A modern online store for a premium watch brand.",
       tech: ["Next.js 15", "Framer Motion", "Stripe API", "Vercel Edge"],
-      results: "0.21s Time to First Paint, +64% order conversions",
+      results: "Quick page loads and better checkout conversions",
       metrics: [
-        { label: "Page Load Paint", val: "0.21s" },
-        { label: "Checkout conversions", val: "+64%" },
+        { label: "Load time", val: "0.21s" },
+        { label: "Conversions", val: "+64%" },
       ],
       color: "from-[#8dbd8b]/10 to-[#588157]/20",
     },
@@ -56,17 +56,14 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div className="max-w-xl text-left">
             <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3 block">
-              Case Studies
+              Projects
             </span>
             <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary">
-              Featured work <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-                Made with care.
-              </span>
+              Our recent projects
             </h2>
           </div>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary max-w-sm text-left md:text-right">
-            See real projects we built for businesses and brands.
+            Clear examples of real websites and tools we build.
           </p>
         </div>
 
@@ -123,7 +120,7 @@ export default function Projects() {
                   href="#contact"
                   className="inline-flex items-center gap-2 text-sm font-bold text-brand-text-primary hover:text-brand-primary transition-colors group border-b border-brand-border hover:border-brand-primary pb-1"
                 >
-                  Ask about a similar project
+                  Ask how we can build this for you
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
                 </a>
               </div>
