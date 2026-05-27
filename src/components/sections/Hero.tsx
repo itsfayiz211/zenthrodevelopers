@@ -70,7 +70,7 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-4 rounded-full glass-panel border border-brand-border hover:border-brand-primary/40 text-brand-text-primary font-display font-semibold text-base transition-all duration-300 hover:bg-white/5 flex items-center gap-1.5"
             >
-              View Our Work
+              View Projects
             </a>
           </motion.div>
 
