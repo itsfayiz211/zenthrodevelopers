@@ -15,7 +15,7 @@ export default function Footer() {
     { name: "Work", href: "#projects" },
     { name: "Process", href: "#process" },
     { name: "Why Us", href: "#why-choose-v" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const services = [
@@ -24,6 +24,11 @@ export default function Footer() {
     "Analytics Dashboards",
     "Branding Experiences",
     "Startup MVPs",
+  ];
+
+  const contactInfo = [
+    { label: "Email", value: "hello@v-system.io", href: "mailto:hello@v-system.io" },
+    { label: "Office", value: "Zurich, Switzerland" },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -38,21 +43,24 @@ export default function Footer() {
         {/* Footer Top grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start mb-12">
           
-          {/* Logo Column */}
-          <div className="md:col-span-5 flex flex-col items-start text-left">
+          {/* Brand Column */}
+          <div className="md:col-span-4 flex flex-col items-start text-left">
             <span className="font-display font-extrabold text-3xl tracking-tighter text-brand-text-primary flex items-center mb-4">
-              V
+              Z
               <span className="inline-block w-2 h-2 rounded-full bg-brand-primary ml-1"></span>
             </span>
             <p className="font-sans text-xs md:text-sm text-brand-text-secondary leading-relaxed max-w-sm mb-6">
-              Crafting premium digital systems for modern brands. We engineer high-performance custom software, SaaS products, and premium websites.
+              We build premium digital systems and SaaS experiences for ambitious brands and startups.
             </p>
-            <span className="text-[10px] font-mono text-brand-text-secondary/50 uppercase tracking-widest">
-              v-agency // engineering
-            </span>
+            <a
+              href="mailto:hello@v-system.io"
+              className="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider text-brand-primary hover:text-brand-secondary transition-colors"
+            >
+              hello@v-system.io
+            </a>
           </div>
 
-          {/* Nav Links Column */}
+          {/* Navigation Column */}
           <div className="md:col-span-3 flex flex-col items-start text-left">
             <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Navigation</h5>
             <div className="flex flex-col gap-2">
@@ -60,7 +68,7 @@ export default function Footer() {
                 <a
                   key={idx}
                   href={link.href}
-                  className="font-sans text-xs text-brand-text-secondary hover:text-brand-text-primary hover:text-brand-primary transition-colors duration-200"
+                  className="font-sans text-xs text-brand-text-secondary hover:text-brand-text-primary transition-colors duration-200"
                 >
                   {link.name}
                 </a>
@@ -69,16 +77,39 @@ export default function Footer() {
           </div>
 
           {/* Services Column */}
-          <div className="md:col-span-4 flex flex-col items-start text-left">
+          <div className="md:col-span-3 flex flex-col items-start text-left">
             <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Core Systems</h5>
             <div className="flex flex-col gap-2">
               {services.map((svc, idx) => (
-                <span
-                  key={idx}
-                  className="font-sans text-xs text-brand-text-secondary"
-                >
+                <span key={idx} className="font-sans text-xs text-brand-text-secondary">
                   {svc}
                 </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Contact Column */}
+          <div className="md:col-span-2 flex flex-col items-start text-left">
+            <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Contact</h5>
+            <div className="flex flex-col gap-2">
+              {contactInfo.map((item, idx) => (
+                <div key={idx}>
+                  <span className="block text-[10px] text-brand-text-secondary/70 uppercase tracking-wider mb-1">
+                    {item.label}
+                  </span>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className="font-sans text-xs text-brand-text-secondary hover:text-brand-text-primary transition-colors duration-200"
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    <span className="font-sans text-xs text-brand-text-secondary">
+                      {item.value}
+                    </span>
+                  )}
+                </div>
               ))}
             </div>
           </div>
@@ -92,10 +123,10 @@ export default function Footer() {
               © {currentYear} Zenthro Developers. All rights reserved.
             </span>
             <a href="#" className="text-[11px] text-brand-text-secondary/70 hover:text-brand-text-primary transition-colors">
-              Privacy Protocol
+              Privacy Policy
             </a>
             <a href="#" className="text-[11px] text-brand-text-secondary/70 hover:text-brand-text-primary transition-colors">
-              Terms of Operation
+              Terms of Service
             </a>
           </div>
 
