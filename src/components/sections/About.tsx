@@ -8,18 +8,18 @@ export default function About() {
   const points = [
     {
       icon: <Zap className="w-5 h-5 text-brand-primary" />,
-      title: "Performance-First Approach",
-      desc: "Every system is optimized for lightning load times. We achieve 98+ Lighthouse scores out of the box.",
+      title: "Fast performance",
+      desc: "We make sites load quickly and run smoothly.",
     },
     {
       icon: <Smartphone className="w-5 h-5 text-brand-primary" />,
-      title: "Mobile-First Architecture",
-      desc: "Impeccable responsiveness. Your web platform feels like a native app across all viewports.",
+      title: "Mobile-ready",
+      desc: "Works well on phones and desktops.",
     },
     {
       icon: <TrendingUp className="w-5 h-5 text-brand-primary" />,
-      title: "Conversion-Focused UI/UX",
-      desc: "We merge breathtaking visuals with calculated user journeys to maximize customer acquisitions.",
+      title: "Easy to use",
+      desc: "Simple interfaces that help people take action.",
     },
   ];
 
@@ -34,16 +34,16 @@ export default function About() {
           {/* Left Column: Heading and description */}
           <div className="lg:col-span-6 flex flex-col items-start">
             <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3">
-              Elite Engineering Agency
+              Engineering made simple
             </span>
             <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary mb-6">
               Modern Development <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-                Built for Growth.
+                Made to grow.
               </span>
             </h2>
             <p className="font-sans text-base md:text-lg text-brand-text-secondary leading-relaxed mb-10">
-              V combines premium aesthetic artistry with enterprise-grade software engineering. We don't just build websites — we engineer highly complex, fluid, and scalable digital systems tailored to power ambitious startups and businesses.
+              We combine design and software to build strong, easy-to-use websites and systems.
             </p>
 
             {/* Core Points list */}
@@ -95,7 +95,7 @@ export default function About() {
                 <span className="text-xs text-brand-text-secondary font-semibold mt-1">Lighthouse Core Score</span>
               </div>
               <p className="text-[11px] text-brand-text-secondary/70">
-                Optimized page weights, edge caching, serverless response rates.
+                Fast page load and stable performance.
               </p>
             </motion.div>
 
@@ -130,7 +130,7 @@ export default function About() {
               </div>
 
               <p className="text-[11px] text-brand-text-secondary/70">
-                Fluid container scaling, zero-layout-shift UI integrations.
+                Layouts that fit every screen cleanly.
               </p>
             </motion.div>
 
@@ -161,7 +161,7 @@ export default function About() {
                 </div>
               </div>
               <p className="text-[11px] text-brand-text-secondary/70">
-                Continuous penetration audits, TLS 1.3 encryption by default.
+                Built with strong protections and secure defaults.
               </p>
             </motion.div>
           </div>

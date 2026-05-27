@@ -9,7 +9,7 @@ export default function Projects() {
     {
       title: "Aether Finance",
       industry: "Fintech & Web3",
-      desc: "A high-performance real-time investment and liquid asset dashboard engineered for modern crypto hedge funds.",
+      desc: "A fast investment dashboard built for crypto and finance teams.",
       tech: ["Next.js", "WebSockets", "Tailwind CSS", "Recharts"],
       results: "14ms WebSocket latency, +4.8x client retention",
       metrics: [
@@ -33,7 +33,7 @@ export default function Projects() {
     {
       title: "Novus E-Commerce",
       industry: "Luxury Retail & Branding",
-      desc: "Seamless, visually arresting e-commerce catalog and immersive branding platform crafted for an elite Swiss horology brand.",
+      desc: "A clean e-commerce site made for a luxury watch brand.",
       tech: ["Next.js 15", "Framer Motion", "Stripe API", "Vercel Edge"],
       results: "0.21s Time to First Paint, +64% order conversions",
       metrics: [
@@ -59,14 +59,14 @@ export default function Projects() {
               Case Studies
             </span>
             <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary">
-              Featured Work <br />
+              Featured work <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-                Crafted with Precision.
+                Made with care.
               </span>
             </h2>
           </div>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary max-w-sm text-left md:text-right">
-            Deep dive into our latest full-stack systems, modern branding projects, and scalable cloud engines.
+            See real projects we built for businesses and brands.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export default function Projects() {
                   href="#contact"
                   className="inline-flex items-center gap-2 text-sm font-bold text-brand-text-primary hover:text-brand-primary transition-colors group border-b border-brand-border hover:border-brand-primary pb-1"
                 >
-                  Inquire About Similar Architecture
+                  Ask about a similar project
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
                 </a>
               </div>

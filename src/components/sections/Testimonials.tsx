@@ -9,21 +9,21 @@ export default function Testimonials() {
 
   const testimonialsList = [
     {
-      quote: "V delivered a fintech dashboard that completely revolutionized our fund's operational speed. The sheer design details and the instant paint load metrics are unheard of. Absolutely elite.",
+      quote: "V built a fast fintech dashboard that made our operations much easier. The design and speed were impressive.",
       author: "Marcus Sterling",
       role: "Founder & CEO",
       company: "Aether Finance",
       rating: "★★★★★",
     },
     {
-      quote: "Our engineering group was blown away by V's pure typescript standards. Their developers integrated complex ML workspace node interfaces in record time. Impeccable communication.",
+      quote: "The team wrote great TypeScript and built our ML dashboard quickly. Communication was clear and fast.",
       author: "Elena Rostova",
       role: "VP of Product Engineering",
       company: "Kortex AI",
       rating: "★★★★★",
     },
     {
-      quote: "V built an immersive boutique e-commerce showcase that feels less like a webpage and more like a work of cinematic art. Fully responsive, ultra-optimized paint speeds, and robust stripe mechanics.",
+      quote: "V built a beautiful e-commerce site that works well on every device and loads quickly.",
       author: "Christian Dupond",
       role: "Creative Brand Director",
       company: "Novus Horology",
@@ -49,16 +49,16 @@ export default function Testimonials() {
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3">
-            Client Voices
+            Client feedback
           </span>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary mb-4">
-            Trusted by Leaders. <br />
+            Real feedback. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-              Celebrated for Quality.
+              Trusted by clients.
             </span>
           </h2>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary leading-relaxed">
-            See how our premium design systems and highly functional architectures help global brands thrive.
+            Read what clients say about our work.
           </p>
         </div>
 

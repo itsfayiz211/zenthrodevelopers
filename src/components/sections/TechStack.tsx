@@ -38,16 +38,16 @@ export default function TechStack() {
       <div className="max-w-7xl mx-auto px-6 relative z-10 mb-12">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
           <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3">
-            Our Toolbox
+            Our tools
           </span>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl tracking-tight leading-tight text-brand-text-primary mb-4">
-            Elite Technologies <br />
+            Modern tools <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-              Engineered with Precision.
+              Made with care.
             </span>
           </h2>
           <p className="font-sans text-xs md:text-sm text-brand-text-secondary leading-relaxed">
-            We employ modern, production-tested software frameworks to build fast, secure, and robust digital platforms.
+            We use modern tools to build fast, secure, and reliable platforms.
           </p>
         </div>
       </div>

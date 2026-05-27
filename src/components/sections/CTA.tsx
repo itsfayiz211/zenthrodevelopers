@@ -21,17 +21,17 @@ export default function CTA() {
           {/* Badge */}
           <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-xs font-semibold text-brand-primary mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Ready to scale?</span>
+            <span>Ready to start?</span>
           </div>
 
           {/* Headline */}
           <h2 className="font-display font-extrabold text-4xl md:text-6xl tracking-tight leading-none text-brand-text-primary mb-6 max-w-2xl text-glow">
-            Let’s Build Something Exceptional.
+            Let’s build something great.
           </h2>
 
           {/* Subheading */}
           <p className="font-sans text-sm md:text-base text-brand-text-secondary max-w-lg mb-10 leading-relaxed">
-            We help ambitious brands launch modern, high-performance digital experiences that perform beautifully and scale infinitely.
+            We make modern websites and apps that load fast and look great.
           </p>
 
           {/* CTA Buttons */}
