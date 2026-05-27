@@ -107,8 +107,41 @@ export default function Services() {
             </span>
           </h2>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary leading-relaxed">
-            From luxury high-performance branding sites to secure database administrative portals, we deliver premium digital systems.
+            From simple low-budget launch websites to premium custom platforms, we help you choose the right build for your goals.
           </p>
+        </div>
+
+        {/* Website Packages */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
+          {[
+            {
+              title: "Budget Website",
+              price: "₹2,500+",
+              note: "Simple launch site with essential pages. No future support included; paid support available after delivery.",
+            },
+            {
+              title: "Standard Website",
+              price: "₹12,000+",
+              note: "Modern multi-page site with forms and clean interactions. Includes one week free support after delivery.",
+            },
+            {
+              title: "Premium Website",
+              price: "₹35,000+",
+              note: "Advanced custom site with optimized UX, performance, and branding. Includes 7 days free support, then paid support as needed.",
+            },
+          ].map((pkg, index) => (
+            <div key={index} className="rounded-3xl border border-brand-border bg-brand-card/45 backdrop-blur-md p-6 text-left shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
+              <div className="flex items-center justify-between mb-5">
+                <h3 className="font-display font-bold text-lg text-brand-text-primary">{pkg.title}</h3>
+                <span className="rounded-full bg-brand-primary/10 px-3 py-1 text-xs font-semibold text-brand-primary">
+                  {pkg.price}
+                </span>
+              </div>
+              <p className="font-sans text-sm leading-relaxed text-brand-text-secondary">
+                {pkg.note}
+              </p>
+            </div>
+          ))}
         </div>
 
         {/* Services Grid */}
