@@ -10,8 +10,8 @@ import Process from "@/components/sections/Process";
 import Testimonials from "@/components/sections/Testimonials";
 import TechStack from "@/components/sections/TechStack";
 import CTA from "@/components/sections/CTA";
-import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
         {/* Epic ambient glow CTA block */}
         <CTA />
 
-        {/* Complete scope contact form & WhatsApp integrations */}
+        {/* Contact section at the bottom of the homepage */}
         <Contact />
       </main>
 

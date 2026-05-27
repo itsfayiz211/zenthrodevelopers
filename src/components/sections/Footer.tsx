@@ -15,7 +15,7 @@ export default function Footer() {
     { name: "Work", href: "#projects" },
     { name: "Process", href: "#process" },
     { name: "Why Us", href: "#why-choose-v" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   const services = [

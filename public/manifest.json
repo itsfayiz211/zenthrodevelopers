@@ -1,0 +1,15 @@
+{
+  "name": "Zenthro Developers",
+  "short_name": "Zenthro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061214",
+  "theme_color": "#46C18A",
+  "icons": [
+    {
+      "src": "/file.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}

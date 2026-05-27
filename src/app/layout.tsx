@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
+import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -64,6 +65,7 @@ export default function RootLayout({
         {/* Layout content */}
         <div className="relative z-10 flex flex-col min-h-screen">
           {children}
+          <ServiceWorkerRegister />
         </div>
       </body>
     </html>

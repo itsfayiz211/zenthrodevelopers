@@ -37,7 +37,7 @@ export default function CTA() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 items-center w-full sm:w-auto">
             <a
-              href="#contact"
+              href="/order"
               className="px-8 py-4 rounded-full bg-brand-primary hover:bg-brand-secondary text-brand-bg-dark font-display font-bold text-base transition-all duration-300 transform hover:scale-[1.02] flex items-center gap-2 group shadow-[0_4px_20px_rgba(88,129,87,0.3)]"
             >
               Start Your Project
