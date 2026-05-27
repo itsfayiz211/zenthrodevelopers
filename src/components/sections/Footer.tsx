@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   const handleScrollTop = (e: React.MouseEvent) => {
@@ -18,17 +18,15 @@ export default function Footer() {
     { name: "Contact", href: "#contact" },
   ];
 
-  const services = [
-    "Full-Stack Web Systems",
-    "SaaS Architectures",
-    "Analytics Dashboards",
-    "Branding Experiences",
-    "Startup MVPs",
-  ];
-
   const contactInfo = [
     { label: "Email", value: "hello@v-system.io", href: "mailto:hello@v-system.io" },
-    { label: "Office", value: "Zurich, Switzerland" },
+    { label: "Location", value: "Zurich, Switzerland" },
+  ];
+
+  const socialLinks = [
+    { label: "LinkedIn", href: "#", icon: <ExternalLink className="w-4 h-4" /> },
+    { label: "Twitter", href: "#", icon: <ExternalLink className="w-4 h-4" /> },
+    { label: "Instagram", href: "#", icon: <ExternalLink className="w-4 h-4" /> },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -41,16 +39,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Footer Top grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start mb-10">
           
           {/* Brand Column */}
-          <div className="md:col-span-4 flex flex-col items-start text-left">
+          <div className="flex flex-col items-start text-left">
             <span className="font-display font-extrabold text-3xl tracking-tighter text-brand-text-primary flex items-center mb-4">
               Z
               <span className="inline-block w-2 h-2 rounded-full bg-brand-primary ml-1"></span>
             </span>
             <p className="font-sans text-xs md:text-sm text-brand-text-secondary leading-relaxed max-w-sm mb-6">
-              We build premium digital systems and SaaS experiences for ambitious brands and startups.
+              Simple websites and apps for growing businesses.
             </p>
             <a
               href="mailto:hello@v-system.io"
@@ -60,9 +58,9 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Navigation Column */}
-          <div className="md:col-span-3 flex flex-col items-start text-left">
-            <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Navigation</h5>
+          {/* Quick links */}
+          <div className="flex flex-col items-start text-left">
+            <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Quick links</h5>
             <div className="flex flex-col gap-2">
               {navLinks.map((link, idx) => (
                 <a
@@ -76,20 +74,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services Column */}
-          <div className="md:col-span-3 flex flex-col items-start text-left">
-            <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Core Systems</h5>
-            <div className="flex flex-col gap-2">
-              {services.map((svc, idx) => (
-                <span key={idx} className="font-sans text-xs text-brand-text-secondary">
-                  {svc}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Contact Column */}
-          <div className="md:col-span-2 flex flex-col items-start text-left">
+          {/* Contact details */}
+          <div className="flex flex-col items-start text-left">
             <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Contact</h5>
             <div className="flex flex-col gap-2">
               {contactInfo.map((item, idx) => (
@@ -110,6 +96,24 @@ export default function Footer() {
                     </span>
                   )}
                 </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Social media */}
+          <div className="flex flex-col items-start text-left">
+            <h5 className="font-display font-bold text-xs uppercase tracking-wider text-brand-text-primary mb-4">Follow us</h5>
+            <div className="flex flex-wrap gap-3">
+              {socialLinks.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.href}
+                  aria-label={link.label}
+                  className="inline-flex items-center gap-2 rounded-xl border border-brand-border/60 px-3 py-2 text-[11px] font-semibold text-brand-text-secondary hover:border-brand-primary/40 hover:text-brand-primary transition-all duration-200"
+                >
+                  {link.icon}
+                  {link.label}
+                </a>
               ))}
             </div>
           </div>

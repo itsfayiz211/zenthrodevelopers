@@ -43,10 +43,10 @@ function Counter({ value, suffix = "", decimals = 0 }: CounterProps) {
 
 export default function Trust() {
   const stats = [
-    { label: "Elite Projects Delivered", value: 140, suffix: "+" },
+    { label: "Projects Completed", value: 140, suffix: "+" },
     { label: "Client Satisfaction", value: 99.8, suffix: "%", decimals: 1 },
-    { label: "Years Combined Mastery", value: 12, suffix: "+" },
-    { label: "Max System Latency", value: 15, suffix: "ms" },
+    { label: "Years of Experience", value: 12, suffix: "+" },
+    { label: "Fast Response Time", value: 15, suffix: "ms" },
   ];
 
   const logos = [
@@ -86,7 +86,7 @@ export default function Trust() {
           {/* Logos Column */}
           <div className="lg:col-span-5 flex flex-col justify-center">
             <p className="text-[10px] text-brand-text-secondary uppercase tracking-widest font-semibold mb-6 text-center lg:text-left">
-              Engineered systems for innovators at
+              Trusted by
             </p>
             <div className="flex flex-wrap items-center justify-center lg:justify-between gap-6 md:gap-8">
               {logos.map((logo, index) => (

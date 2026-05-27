@@ -17,43 +17,43 @@ export default function WhyChoose() {
   const benefitsList = [
     {
       icon: <Boxes className="w-5 h-5 text-brand-primary" />,
-      title: "Scalable Systems",
-      desc: "Architected to process surges of heavy data traffic without single-point bottlenecks.",
+      title: "Scalable systems",
+      desc: "Built to handle more traffic without slowing down.",
     },
     {
       icon: <Sparkles className="w-5 h-5 text-brand-primary" />,
-      title: "Premium UI/UX",
-      desc: "Luxurious, flawless interfaces built on mathematical grids and pixel perfection.",
+      title: "Strong UI",
+      desc: "Clean interfaces that are easy to use.",
     },
     {
       icon: <Gauge className="w-5 h-5 text-brand-primary" />,
-      title: "Fast Performance",
-      desc: "Pre-rendered static files and edge delivery protocols ensuring instant site response.",
+      title: "Fast performance",
+      desc: "Pages load quickly on all devices.",
     },
     {
       icon: <Binary className="w-5 h-5 text-brand-primary" />,
       title: "Clean Architecture",
-      desc: "Completely modular, standard TypeScript patterns written to guarantee code maintainability.",
+      desc: "Simple code that is easy to update and grow.",
     },
     {
       icon: <Search className="w-5 h-5 text-brand-primary" />,
       title: "SEO Optimized",
-      desc: "Proper structured headings and tags for perfect crawler indexing and page search rank.",
+      desc: "Built so search engines can find your pages.",
     },
     {
       icon: <Smartphone className="w-5 h-5 text-brand-primary" />,
       title: "Mobile First",
-      desc: "Every interface is tailored from screen width zero to ultra-wide desktop monitors.",
+      desc: "Works smoothly on phones and desktops.",
     },
     {
       icon: <ShieldCheck className="w-5 h-5 text-brand-primary" />,
       title: "Secure Development",
-      desc: "Encryption-first secure sessions, cross-site attack protections, and server sanitization.",
+      desc: "Built with secure connections and safe server rules.",
     },
     {
       icon: <Zap className="w-5 h-5 text-brand-primary" />,
       title: "Startup Focused",
-      desc: "Lean operations prioritizing agile sprints and rapid iterations to capture early-stage markets.",
+      desc: "Fast work focused on early-stage growth.",
     },
   ];
 
@@ -67,16 +67,16 @@ export default function WhyChoose() {
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-20">
           <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3">
-            Why Partner With V
+            Why choose us
           </span>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary mb-4">
-            Built Different. <br />
+            Built different. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-              Engineered Better.
+              Built better.
             </span>
           </h2>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary leading-relaxed">
-            We operate at the convergence of breathtaking design and pure, high-performance computational engineering.
+            We blend clean design with strong code.
           </p>
         </div>
 

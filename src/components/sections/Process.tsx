@@ -8,32 +8,32 @@ export default function Process() {
     {
       num: "01",
       title: "Discovery",
-      desc: "Deep research into your target audience, core objectives, brand mechanics, and scaling aspirations.",
+      desc: "We learn your goals and audience.",
     },
     {
       num: "02",
       title: "Strategy",
-      desc: "Architecting functional specifications, high-performance database mapping, and custom UI design patterns.",
+      desc: "We plan the features and structure.",
     },
     {
       num: "03",
       title: "Design",
-      desc: "Crafting highly aesthetic interactive prototypes based on mathematical layouts and strict component logic.",
+      desc: "We make the site look clear and polished.",
     },
     {
       num: "04",
       title: "Development",
-      desc: "Clean production engineering with Next.js, robust type checking, structured server integrations, and clean modules.",
+      desc: "We build the site with clean code.",
     },
     {
       num: "05",
       title: "Optimization",
-      desc: "Rigorous performance audits, layout shift minimization, caching setups, and accessibility updates.",
+      desc: "We improve speed and reliability.",
     },
     {
       num: "06",
       title: "Launch",
-      desc: "Edge server deployment, live SSL configuration, continuous web analytics hookups, and smooth handoff.",
+      desc: "We deploy it live and keep it stable.",
     },
   ];
 
@@ -47,16 +47,16 @@ export default function Process() {
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-24">
           <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3">
-            How We Partner
+            How we work
           </span>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary mb-4">
             Our Development Process <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-              Engineered to Perfection.
+              Built to work.
             </span>
           </h2>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary leading-relaxed">
-            A precise, hyper-detailed approach that bridges conceptual aesthetics with robust backend systems.
+            A simple plan from idea to launch.
           </p>
         </div>
 

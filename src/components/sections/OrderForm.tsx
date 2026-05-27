@@ -86,29 +86,29 @@ export default function OrderForm() {
   };
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden bg-brand-bg-dark border-t border-brand-border">
-      <div className="absolute bottom-[10%] left-[5%] w-[450px] h-[450px] bg-brand-primary/5 rounded-full blur-[140px] pointer-events-none" />
+    <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-b from-[#386641] to-black border-t border-black/20">
+      <div className="absolute bottom-[10%] left-[5%] w-[450px] h-[450px] bg-white/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-3xl mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12">
           <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3">
-            Secure Order Route
+            Order Form
           </span>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary mb-4">
-            Submit your request — private and secure.
+            Send your order quickly.
           </h2>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary leading-relaxed">
-            This order form is isolated for team review. Submit and our team will follow up using your preferred contact method.
+            Fill in your details and we will get back to you.
           </p>
         </div>
 
-        <div className="p-6 md:p-8 rounded-3xl glass-panel bg-brand-card/20 backdrop-blur-md border border-brand-border relative">
+        <div className="p-6 md:p-8 rounded-none bg-[#386641]/95 border border-[#386641]/50 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.55)] relative">
           {orderSubmitted ? (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="py-12 text-center">
               <div className="w-16 h-16 rounded-full bg-brand-primary/10 border border-brand-primary/30 flex items-center justify-center text-brand-primary text-2xl mx-auto mb-4">✓</div>
-              <h4 className="font-display font-bold text-lg text-brand-text-primary mb-2">Request received</h4>
+              <h4 className="font-display font-bold text-lg text-brand-text-primary mb-2">Order received</h4>
               <p className="font-sans text-xs text-brand-text-secondary max-w-xs mx-auto leading-normal">
-                Your order is queued in the internal dashboard for team review.
+                We received your order and will review it soon.
               </p>
             </motion.div>
           ) : (
@@ -120,8 +120,23 @@ export default function OrderForm() {
                 </div>
 
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] text-brand-text-secondary uppercase font-bold tracking-wider">{orderForm.contactMethod === "Email" ? "Email Address" : orderForm.contactMethod === "Phone" ? "Phone Number" : "WhatsApp Number"}</label>
-                  <input required type={orderForm.contactMethod === "Email" ? "email" : "tel"} placeholder={orderForm.contactMethod === "Email" ? "e.g. marcus@aether.finance" : "+91 98765 43210"} value={orderForm.email} onChange={(e) => setOrderForm({ ...orderForm, email: e.target.value })} className="px-4 py-3 rounded-xl border border-brand-border bg-brand-bg-dark text-brand-text-primary text-sm font-sans placeholder:text-brand-text-secondary/30 focus:outline-none focus:border-brand-primary/60 transition-colors" />
+                  <label className="text-[10px] text-brand-text-secondary uppercase font-bold tracking-wider">
+                    {orderForm.contactMethod === "Email"
+                      ? "Email Address"
+                      : orderForm.contactMethod === "Phone"
+                      ? "Phone Number"
+                      : "WhatsApp Number"}
+                  </label>
+                  <input
+                    required
+                    type={orderForm.contactMethod === "Email" ? "email" : "tel"}
+                    inputMode={orderForm.contactMethod === "Email" ? "email" : "tel"}
+                    autoComplete={orderForm.contactMethod === "Email" ? "email" : "tel"}
+                    placeholder={orderForm.contactMethod === "Email" ? "e.g. hello@example.com" : "+91 98765 43210"}
+                    value={orderForm.email}
+                    onChange={(e) => setOrderForm({ ...orderForm, email: e.target.value })}
+                    className="px-4 py-3 rounded-xl border border-brand-border bg-brand-bg-dark text-brand-text-primary text-sm font-sans placeholder:text-brand-text-secondary/30 focus:outline-none focus:border-brand-primary/60 transition-colors"
+                  />
                 </div>
               </div>
 
@@ -162,7 +177,7 @@ export default function OrderForm() {
                 <textarea required rows={5} placeholder="Share the features, pages, and goals for your website." value={orderForm.scope} onChange={(e) => setOrderForm({ ...orderForm, scope: e.target.value })} className="px-4 py-3 rounded-xl border border-brand-border bg-brand-bg-dark text-brand-text-primary text-sm font-sans placeholder:text-brand-text-secondary/30 focus:outline-none focus:border-brand-primary/60 transition-colors resize-none" />
               </div>
 
-              <button type="submit" className="w-full py-4 rounded-xl bg-brand-primary hover:bg-brand-secondary text-brand-bg-dark font-display font-bold text-base transition-all duration-300 transform hover:scale-[1.01] flex items-center justify-center gap-2">Send Order Request <Send className="w-4 h-4" /></button>
+              <button type="submit" className="w-full py-4 rounded-xl bg-brand-primary hover:bg-brand-secondary text-brand-bg-dark font-display font-bold text-base transition-all duration-300 transform hover:scale-[1.01] flex items-center justify-center gap-2">Send Request <Send className="w-4 h-4" /></button>
             </form>
           )}
         </div>

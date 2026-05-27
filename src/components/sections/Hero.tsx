@@ -25,7 +25,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border border-brand-primary/20 text-xs font-semibold text-brand-secondary mb-6 hover:border-brand-primary/40 transition-colors cursor-default"
           >
             <Sparkles className="w-3.5 h-3.5 animate-pulse text-brand-primary" />
-            <span>Digital Engineering Partner of Choice</span>
+            <span>Trusted digital partner</span>
           </motion.div>
 
           {/* Heading */}
@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-sans text-lg md:text-xl text-brand-text-secondary max-w-xl leading-relaxed mb-10"
           >
-            Premium full-stack systems, custom web applications, SaaS dashboards, and high-performance websites engineered for modern brands.
+            Simple, fast websites and apps for modern brands.
           </motion.p>
 
           {/* CTAs */}
@@ -83,15 +83,15 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2">
               <Cpu className="w-4 h-4 text-brand-primary" />
-              <span>Edge-Native Tech</span>
+              <span>Fast tech</span>
             </div>
             <div className="flex items-center gap-2">
               <Layout className="w-4 h-4 text-brand-primary" />
-              <span>Elite UX Architecture</span>
+              <span>Easy design</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-brand-primary" />
-              <span>Enterprise Security</span>
+              <span>Secure systems</span>
             </div>
           </motion.div>
         </div>

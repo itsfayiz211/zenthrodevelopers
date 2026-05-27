@@ -35,18 +35,18 @@ export default function Contact() {
           <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary mb-4">
             Reach us directly. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary text-glow">
-              No contact, no connection.
+              Simple and clear contact.
             </span>
           </h2>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary leading-relaxed">
-            Reach out directly from the bottom of the homepage for general inquiries, partnerships, and support requests.
+            Use the form below for questions, projects, or support.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-7 p-6 md:p-8 rounded-3xl glass-panel bg-brand-card/20 backdrop-blur-md border border-brand-border relative">
             <h3 className="font-display font-bold text-xl text-brand-text-primary mb-6 text-left">
-              Connect With Us
+              Send a message
             </h3>
 
             {submitted ? (
@@ -60,7 +60,7 @@ export default function Contact() {
                 </div>
                 <h4 className="font-display font-bold text-lg text-brand-text-primary mb-2">Message sent</h4>
                 <p className="font-sans text-xs text-brand-text-secondary max-w-xs leading-normal">
-                  Your inquiry is live. Our team will get back to you via your preferred channel.
+                  We got your message and will reply soon.
                 </p>
               </motion.div>
             ) : (
@@ -159,11 +159,11 @@ export default function Contact() {
                 <h4 className="font-display font-bold text-base text-brand-text-primary">Always reachable</h4>
               </div>
               <p className="text-sm text-brand-text-secondary leading-relaxed">
-                If users can’t contact us, they can’t connect with us. This page is dedicated to making connection direct and simple.
+                If people can’t reach us, we can’t help them. This page makes it easy to connect.
               </p>
               <div className="rounded-3xl bg-brand-bg-dark/80 border border-brand-border p-4 text-sm text-brand-text-secondary">
                 <p className="font-semibold text-brand-text-primary">Get connected</p>
-                <p className="mt-2">Reach us through email, WhatsApp, or use the form here to start the conversation.</p>
+                <p className="mt-2">Reach us by email, WhatsApp, or use the form below.</p>
               </div>
             </div>
 

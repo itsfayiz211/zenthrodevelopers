@@ -40,7 +40,7 @@ export default function Navbar() {
             </div>
             <div>
               <p className="font-display text-xl font-semibold text-brand-text-primary">Zenthro</p>
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-text-secondary">Creative digital partner</p>
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-text-secondary">Digital partner</p>
             </div>
           </a>
 

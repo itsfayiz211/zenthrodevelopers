@@ -20,52 +20,52 @@ export default function Services() {
     {
       icon: <Code2 className="w-6 h-6 text-brand-primary" />,
       title: "Full Stack Development",
-      desc: "End-to-end engineered web apps utilizing Next.js, React, Node.js and elite database setups.",
+      desc: "Full web apps built with modern tools and strong backend support.",
     },
     {
       icon: <Layers className="w-6 h-6 text-brand-primary" />,
       title: "SaaS Applications",
-      desc: "Robust, multi-tenant subscription systems configured with stripe billing engines and secure scaling.",
+      desc: "Subscription apps with secure billing and scalable design.",
     },
     {
       icon: <LayoutDashboard className="w-6 h-6 text-brand-primary" />,
       title: "Dashboard Systems",
-      desc: "Cinematic administrative portals packed with live analytics charts and modular panel tools.",
+      desc: "Dashboard systems with live analytics and useful controls.",
     },
     {
       icon: <UserCheck className="w-6 h-6 text-brand-primary" />,
       title: "Portfolio Websites",
-      desc: "Showcase experiences built with elegant micro-animations and luxurious visual styling.",
+      desc: "Portfolio sites with clean visuals and smooth motion.",
     },
     {
       icon: <Compass className="w-6 h-6 text-brand-primary" />,
       title: "Branding Websites",
-      desc: "Engaging corporate landing hubs representing premium brands in high fidelity.",
+      desc: "Brand websites designed to look sharp and professional.",
     },
     {
       icon: <Briefcase className="w-6 h-6 text-brand-primary" />,
       title: "Business Websites",
-      desc: "Structured organizational platforms designed to establish credibility and capture qualified leads.",
+      desc: "Business websites built to help people trust your brand.",
     },
     {
       icon: <Rocket className="w-6 h-6 text-brand-primary" />,
       title: "Startup MVPs",
-      desc: "Rapid deployment of fully operational minimum viable products with clean code ready for growth.",
+      desc: "Fast MVPs built to launch quickly and grow later.",
     },
     {
       icon: <Palette className="w-6 h-6 text-brand-primary" />,
       title: "UI/UX Design",
-      desc: "Meticulous design languages built from scratch on robust component principles and sleek grids.",
+      desc: "Polished UI designs that feel modern and clear.",
     },
     {
       icon: <Cpu className="w-6 h-6 text-brand-primary" />,
       title: "API Development",
-      desc: "High-throughput server APIs integrated with comprehensive documentation and flawless token security.",
+      desc: "Fast APIs with secure access and clear documentation.",
     },
     {
       icon: <ShieldAlert className="w-6 h-6 text-brand-primary" />,
       title: "Admin Panels",
-      desc: "Bespoke database-backed admin portals created for internal operations and team management.",
+      desc: "Admin dashboards made for simple team workflows.",
     },
   ];
 
@@ -98,16 +98,16 @@ export default function Services() {
         {/* Section header */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-20">
           <span className="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-3">
-            Our Offerings
+            Our Services
           </span>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-tight text-brand-text-primary mb-4">
-            Bespoke Solutions <br />
+            Simple solutions <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-[#78b376] text-glow">
-              Engineered for Results.
+              Built for results.
             </span>
           </h2>
           <p className="font-sans text-sm md:text-base text-brand-text-secondary leading-relaxed">
-            From simple low-budget launch websites to premium custom platforms, we help you choose the right build for your goals.
+            We build websites and apps that are easy to use, fast, and reliable.
           </p>
         </div>
 
@@ -117,17 +117,17 @@ export default function Services() {
             {
               title: "Budget Website",
               price: "₹2,500+",
-              note: "Simple launch site with essential pages. No future support included; paid support available after delivery.",
+              note: "A simple launch site with the main pages. Support is available after delivery.",
             },
             {
               title: "Standard Website",
               price: "₹12,000+",
-              note: "Modern multi-page site with forms and clean interactions. Includes one week free support after delivery.",
+              note: "A modern multi-page site with forms and clean design. Includes one week of support.",
             },
             {
-              title: "Premium Website",
+              title: "Premium site",
               price: "₹35,000+",
-              note: "Advanced custom site with optimized UX, performance, and branding. Includes 7 days free support, then paid support as needed.",
+              note: "A custom site with fast performance and polished styling. Includes one week of support.",
             },
           ].map((pkg, index) => (
             <div key={index} className="rounded-3xl border border-brand-border bg-brand-card/45 backdrop-blur-md p-6 text-left shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
